@@ -228,6 +228,19 @@
                     </div>
                 </div>
             </div>
+  <div class="gallery-item bg-gradient-to-br from-blue-100 to-purple-100 h-48 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:from-blue-200 hover:to-purple-200 transition-colors" onclick="downloadFile('myadel_1.zip')">
+     <div class="text-4xl mb-2">
+      🎥
+     </div><span class="text-gray-700 text-center text-sm px-2">Скачайте видео на свой компьютер для просмотра<br>
+      1 файл myadel_1.zip</span>
+  </div>
+    <div class="gallery-item bg-gradient-to-br from-purple-100 to-pink-100 h-48 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:from-purple-200 hover:to-pink-200 transition-colors" onclick="downloadFile('myadel_2.zip')">
+     <div class="text-4xl mb-2">
+      🎥
+     </div><span class="text-gray-700 text-center text-sm px-2">Скачайте видео на свой компьютер для просмотра<br>
+      1 файл myadel_2.zip</span>
+    </div>
+            
         </div>
     </section>
 
@@ -378,8 +391,20 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99503c6581ef2d19',t:'MTc2MTU0NzU4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99503c6581ef2d19',t:'MTc2MTU0NzU4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+       function downloadFile(filename) {
+            // Create a temporary link element for download
+            const link = document.createElement('a');
+            link.href = `https://saiding2025.github.io/stroika/cartin/${filename}`;
+            link.download = filename;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+</body>
 </html>
+
 
 
 
